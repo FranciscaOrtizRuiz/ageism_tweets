@@ -8,5 +8,5 @@ Researchers:
 - Louise Mitchell, [University of Salford](https://louisemitchellsalford.wordpress.com).
 
 Acknowledges:
-This research project is titled "Ageism in the era of Covid-19: exploring stereotypes in the press and/or social media", and has been funded by MICRA Seedcorn funding call 2021. Founded awarded to the researchers Francisca Ortiz and Louise Mitchell by January 2021. 
+This research project is titled "Ageism in the era of Covid-19: exploring stereotypes in the press and/or social media", and has been funded by **MICRA Seedcorn funding call 2021**. Founded awarded to the researchers Francisca Ortiz and Louise Mitchell by January 2021. 
 
