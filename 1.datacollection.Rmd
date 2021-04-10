@@ -12,18 +12,18 @@ This Rscript is based in the repository
 
 ## Install packages
 
-```{r setup, include=FALSE}
+```{r}
+devtools::install_github("cjbarrie/academictwitteR")
+
 #install.packages("get_hashtag_tweets")
 library(academictwitteR)
-
-devtools::install_github("cjbarrie/academictwitteR")
 ```
 
 ## Bearer Token
 
 Add the bearer token from your Twitter API account in between "". 
 
-```{r setup, include=FALSE}
+```{r}
 bearer_token <- ""
 ```
 
@@ -31,7 +31,7 @@ bearer_token <- ""
 
 For the data extraction were selected three specific days related with the vaccine of Covid-19. The first extraction was on 2 of December 2020: when the first COVID-19 vaccine was granted regulatory approval by the UK medicines regulator MHRA.
 
-```{r pressure, echo=FALSE}
+```{r}
 get_hashtag_tweets("#CovidVaccine", "2020-12-02T00:00:01Z", 
                    "2020-12-02T23:59:59Z", bearer_token, 
                    data_path = "/Users/franciscaortizruiz/Desktop/data")
@@ -41,7 +41,7 @@ get_hashtag_tweets("#CovidVaccine", "2020-12-02T00:00:01Z",
 
 For the data extraction were selected three specific days related with the vaccine of Covid-19. The first extraction was on 4 of December 2020: first publication stablishing the plan of how the vaccinate was going to distributed in the population.
 
-```{r pressure, echo=FALSE}
+```{r}
 get_hashtag_tweets("#CovidVaccine", "2020-12-04T00:00:01Z", 
                    "2020-12-04T23:59:59Z", bearer_token, 
                    data_path = "/Users/franciscaortizruiz/Desktop/data")
@@ -51,7 +51,7 @@ get_hashtag_tweets("#CovidVaccine", "2020-12-04T00:00:01Z",
 
 For the data extraction were selected three specific days related with the vaccine of Covid-19. The first extraction was on 8 of December 2020: first vaccination given in the UK.
 
-```{r pressure, echo=FALSE}
+```{r}
 get_hashtag_tweets("#CovidVaccine", "2020-12-08T00:00:01Z", 
                    "2020-12-08T23:59:59Z", bearer_token, 
                    data_path = "/Users/franciscaortizruiz/Desktop/data")
