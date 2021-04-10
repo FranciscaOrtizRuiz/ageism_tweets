@@ -1,0 +1,59 @@
+---
+title: "1.datacollection"
+author: "Francisca Ortiz"
+date: "4/10/2021"
+output: html_document
+---
+
+This documment present data collection stage of the study "Ageism in the era of Covid-19: exploring stereotypes in the press and/or social media", which has been funded by MICRA Seedcorn funding call 2021. Founded awarded to the researchers Francisca Ortiz and Louise Mitchell by January 2021.
+
+This Rscript is based in the repository 
+<https://github.com/cjbarrie/academictwitteR> 
+
+## Install packages
+
+```{r setup, include=FALSE}
+#install.packages("get_hashtag_tweets")
+library(academictwitteR)
+
+devtools::install_github("cjbarrie/academictwitteR")
+```
+
+## Bearer Token
+
+Add the bearer token from your Twitter API account in between "". 
+
+```{r setup, include=FALSE}
+bearer_token <- ""
+```
+
+## Data extraction 1.
+
+For the data extraction were selected three specific days related with the vaccine of Covid-19. The first extraction was on 2 of December 2020: when the first COVID-19 vaccine was granted regulatory approval by the UK medicines regulator MHRA.
+
+```{r pressure, echo=FALSE}
+get_hashtag_tweets("#CovidVaccine", "2020-12-02T00:00:01Z", 
+                   "2020-12-02T23:59:59Z", bearer_token, 
+                   data_path = "/Users/franciscaortizruiz/Desktop/data")
+```
+
+## Data extraction 2.
+
+For the data extraction were selected three specific days related with the vaccine of Covid-19. The first extraction was on 4 of December 2020: first publication stablishing the plan of how the vaccinate was going to distributed in the population.
+
+```{r pressure, echo=FALSE}
+get_hashtag_tweets("#CovidVaccine", "2020-12-04T00:00:01Z", 
+                   "2020-12-04T23:59:59Z", bearer_token, 
+                   data_path = "/Users/franciscaortizruiz/Desktop/data")
+```
+
+## Data extraction 3.
+
+For the data extraction were selected three specific days related with the vaccine of Covid-19. The first extraction was on 8 of December 2020: first vaccination given in the UK.
+
+```{r pressure, echo=FALSE}
+get_hashtag_tweets("#CovidVaccine", "2020-12-08T00:00:01Z", 
+                   "2020-12-08T23:59:59Z", bearer_token, 
+                   data_path = "/Users/franciscaortizruiz/Desktop/data")
+```
+
