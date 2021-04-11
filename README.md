@@ -21,10 +21,10 @@ to the researchers Francisca Ortiz and Louise Mitchell by January 2021.
 
 This repository contains:
 
-  - 1.datacollection: Rmd with the information about how was the data
-    collection.
-  - 2.datacleaning: Rmd with the data cleaning.
-  - 3.dataanalysis: Rmd with the analysis of the data.
+  - [1.datacollection: All the information about how was the data
+    collection.](https://github.com/FranciscaOrtizRuiz/ageism_tweets/blob/main/1.datacollection.md)
+  - 2.datacleaning: Process of data cleaning.
+  - 3.dataanalysis: The analysis of data.
 
 **This research is currently being performed, which means that it will
 be suffering some changes in the next couple of months. It is expected
