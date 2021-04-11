@@ -1,8 +1,10 @@
 ---
-title: "1.Data Collection"
-author: "Francisca Ortiz"
-output: html_document
+output: github_document
 ---
+
+## Data Collection
+
+**Author Rscript: Francisca Ortiz.**
 
 This documment present data collection stage of the study "Ageism in the era of Covid-19: exploring stereotypes in the press and/or social media", which has been funded by MICRA Seedcorn funding call 2021. Founded awarded to the researchers Francisca Ortiz and Louise Mitchell by January 2021.
 
