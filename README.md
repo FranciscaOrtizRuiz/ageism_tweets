@@ -27,5 +27,4 @@ This repository contains:
   - 3.dataanalysis: The analysis of data.
 
 **This research is currently being performed, which means that it will
-be suffering some changes in the next couple of months. It is expected
-to have it complete by July 2021.**
+be suffering some changes in the next couple of months.**
