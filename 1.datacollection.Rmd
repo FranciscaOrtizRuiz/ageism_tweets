@@ -14,7 +14,7 @@ This Rscript is based in the repository
 ### Install packages
 
 ```{}
-devtools::install_github("cjbarrie/academictwitteR")
+#devtools::install_github("cjbarrie/academictwitteR")
 
 #install.packages("get_hashtag_tweets")
 library(academictwitteR)
@@ -25,10 +25,10 @@ library(academictwitteR)
 Add the bearer token from your Twitter API account in between "". 
 
 ```{}
-bearer_token <- ""
+bearer_token <- "AAAAAAAAAAAAAAAAAAAAAPfNOQEAAAAAEV%2BLV%2FyjOA%2FhMhDb4tuobrQdA8E%3DNw6Re9t4atB7GURhT3l42TMy7GKNGivI61WLDqwqBSG9rvbuqx"
 ```
 
-### Data extraction
+### Data extraction - Stage 1
 
 **Data extration 1**
 
@@ -56,6 +56,26 @@ For the data extraction were selected three specific days related with the vacci
 
 ```{}
 get_hashtag_tweets("#CovidVaccine", "2020-12-08T00:00:01Z", 
+                   "2020-12-08T23:59:59Z", bearer_token, 
+                   data_path = "/Users/franciscaortizruiz/Desktop/data")
+```
+
+### Data extraction - Stage 2
+
+For the second data extraction were selected two specific hashtags: #OkBoomer and #BoomerRemover. We follow each one for one week: between the days 2 and 8 of december 2020.  
+
+**Data extration #OkBoomer**
+
+```{}
+get_hashtag_tweets("#OkBoomer", "2020-12-02T00:00:01Z", 
+                   "2020-12-08T23:59:59Z", bearer_token, 
+                   data_path = "/Users/franciscaortizruiz/Desktop/data")
+```
+
+**Data extration #BoomerRemover**
+
+```{}
+get_hashtag_tweets("#BoomerRemover", "2020-12-02T00:00:01Z", 
                    "2020-12-08T23:59:59Z", bearer_token, 
                    data_path = "/Users/franciscaortizruiz/Desktop/data")
 ```
